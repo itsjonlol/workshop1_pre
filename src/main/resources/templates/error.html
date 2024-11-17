@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/style.css}"> <!-- dk if i can do both-->
+    <link rel="stylesheet" type="text/css" href="../static/style.css"/> <!-- remember to go one folder up-->
+    
+
+
+</head>
+<body>
+<h1>My Thymeleaf Error Page</h1>
+<table>
+    <tr>
+        <td>Date</td>
+        <td th:text="${timestamp}"/>
+    </tr>
+    <tr>
+        <td>Path</td>
+        <td th:text="${path}"/>
+    </tr>
+    <tr>
+        <td>Error</td>
+        <td th:text="${error}"/>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td th:text="${status}"/>
+    </tr>
+    <tr>
+        <td>Message</td>
+        <td th:text="${message}"/>
+    </tr>
+    <tr>
+        <td>Exception</td>
+        <td th:text="${exception}"/>
+    </tr>
+    <tr>
+        <td>Trace</td>
+        <td>
+            <pre th:text="${trace}"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Action</td>
+        <td>
+            <a href = "/"> Go back to homepage</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error Page</title>
+</head>
+<body>
+    <h1>Oops! Something went wrong.</h1>
+    <p th:text="'Status Code: ' + ${status}"></p>
+    <p th:text="'Message: ' + ${message}"></p>
+    <a href="/">Go to Homepage</a>
+</body>
+</html> -->

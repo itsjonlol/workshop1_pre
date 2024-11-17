@@ -1,0 +1,38 @@
+h1 {
+    color: white;
+    font-weight:bold;
+}
+
+body {
+    background-color: black;
+}
+table td{
+    vertical-align:top;
+    border:solid 1px #888;
+    padding:10px;
+    color:pink;
+    }
+
+    a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+    a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    
+    a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    }
